@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "map.h"
+#include "Tree.h"
 
 int main() {
     t_map map = createMapFromFile("..\\maps\\example1.map");
@@ -22,5 +23,7 @@ int main() {
         printf("\n");
     }
     displayMap(map);
+    t_node Tree = createTree_nr();
+    printf("Valeur premier noeud %d",Tree.value);
     return 0;
 }
