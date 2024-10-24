@@ -23,7 +23,9 @@ int main() {
         printf("\n");
     }
     displayMap(map);
-    t_node Tree = createTree_nr();
+    t_localisation init_loc;
+    init_loc = loc_init(6,4,NORTH);
+    t_node Tree = createTree_nr(map,init_loc);
     printf("Valeur premier noeud %d",Tree.value);
     return 0;
 }

@@ -16,4 +16,6 @@ add_executable(untitled1 main.c
         stack.h
         Tree.c
         Tree.h
+        randMove.c
+        randMove.h
 )

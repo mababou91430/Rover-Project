@@ -1,20 +1,22 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 #include "Tree.h"
+#include "moves.h"
+#include "map.h"
+#include "loc.h"
 
-t_node createTree_nr(){
+t_node createTree_nr(t_map map, t_localisation loc_init){
+    srand(time(NULL));
     t_node *Tree = malloc(sizeof(t_node));
-    Tree->value = 9;
     Tree->sons = malloc(9*sizeof(t_node));
-
-    Tree->value = 9;
+    Tree->value = map.costs[loc_init.pos.x][loc_init.pos.y];
     Tree->nbSons = 9;
     Tree->sons = malloc(Tree->nbSons * sizeof(t_node*));
 
     for(int i=0; i<9;i++){
         Tree->sons[i] = malloc(sizeof(t_node));
-        // segfault car tu essayes d'acceder a Tree->sons[i]->sons alors qu'il n'est pas encore malloc
-        // Tree->sons[i]->sons = (t_node*)malloc(8*sizeof(t_node));
+
         Tree->sons[i]->sons = malloc(8 * sizeof(t_node*));
         for(int j=0; j<8;j++){
             Tree->sons[i]->sons[j] = malloc(sizeof(t_node));
