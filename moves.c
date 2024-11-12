@@ -144,6 +144,7 @@ t_localisation move(t_localisation loc, t_move move)
 {
     t_localisation new_loc;
     new_loc.ori = rotate(loc.ori, move);
+
     new_loc = translate(loc, move);
     return new_loc;
 }
