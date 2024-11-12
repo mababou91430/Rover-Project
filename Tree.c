@@ -19,15 +19,16 @@ t_node createTree_nr(t_map map, t_localisation loc_init){
         loc_init = randMove(loc_init);
         if(isValidLocalisation(loc_init.pos,7,6)){
             Tree->sons[i]->value = map.costs[loc_init.pos.x][loc_init.pos.y];
+            printf("Pos valide : %d,%d\n",loc_init.pos.x,loc_init.pos.y);
         }
         else{
-            printf("%d,%d\n",loc_init.pos.x,loc_init.pos.y);
+            printf("Pos non valide : %d,%d\n",loc_init.pos.x,loc_init.pos.y);
            printf("Position non valide\n");
         }
         Tree->sons[i]->sons = malloc(8 * sizeof(t_node*));
         for(int j=0; j<8;j++){
             Tree->sons[i]->sons[j] = malloc(sizeof(t_node));
-            randMove(loc_init);
+            //randMove(loc_init);
             if(isValidLocalisation(loc_init.pos,7,6)){
                 Tree->sons[i]->sons[j]->value = map.costs[loc_init.pos.x][loc_init.pos.y];
             }
