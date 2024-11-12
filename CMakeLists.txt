@@ -13,4 +13,9 @@ add_executable(untitled1 main.c
         queue.c
         queue.h
         stack.c
-        stack.h)
+        stack.h
+        Tree.c
+        Tree.h
+        randMove.c
+        randMove.h
+)

@@ -3,7 +3,8 @@
 //
 
 #include "moves.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /* prototypes of local functions */
 /* local functions are used only in this file, as helper functions */
 
@@ -40,6 +41,7 @@ t_orientation rotate(t_orientation ori, t_move move)
             rst=2;
             break;
         default:
+            rst=0;
             break;
     }
     return (ori+rst)%4;
@@ -53,6 +55,8 @@ t_localisation translate(t_localisation loc, t_move move)
      *  - the origin (x=0, y=0) is at the top left corner
      */
     t_position res;
+    res.x = 0;
+    res.y = 0;
     switch (move) {
         case F_10:
             switch (loc.ori) {
@@ -142,9 +146,13 @@ char *getMoveAsString(t_move move)
 
 t_localisation move(t_localisation loc, t_move move)
 {
-    t_localisation new_loc;
-    new_loc.ori = rotate(loc.ori, move);
-    new_loc = translate(loc, move);
+    t_localisation new_loc = loc;
+    if(move == F_10 | move == F_20 | move == F_30 | move == B_10){
+        new_loc = translate(loc, move);
+    }
+    else{
+        new_loc.ori = rotate(loc.ori, move);
+    }
     return new_loc;
 }
 
