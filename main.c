@@ -3,6 +3,7 @@
 #include <time.h>
 #include "map.h"
 #include "Tree.h"
+#include "printArbre.h"
 
 int main() {
     srand(time(NULL));
@@ -29,6 +30,6 @@ int main() {
     t_localisation init_loc;
     init_loc = loc_init(0,0,SOUTH);
     t_node Tree = createTree_nr(map,init_loc);
-    printf("Valeur premier noeud %d",Tree.value);
+    printTree(&Tree);
     return 0;
 }

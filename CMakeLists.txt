@@ -18,4 +18,8 @@ add_executable(untitled1 main.c
         Tree.h
         randMove.c
         randMove.h
+        printArbre.c
+        printArbre.h
+        finder.c
+        finder.h
 )
