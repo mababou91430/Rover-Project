@@ -4,6 +4,7 @@
 #include "map.h"
 #include "Tree.h"
 #include "printArbre.h"
+#include "finder.h"
 
 int main() {
     srand(time(NULL));
@@ -31,5 +32,11 @@ int main() {
     init_loc = loc_init(0,0,SOUTH);
     t_node Tree = createTree_nr(map,init_loc);
     printTree(&Tree);
+    int* chemin;
+    chemin = pathFinder(Tree);
+    for(int i=0;i<6;i++){
+        printf("%d -> ",chemin[i]);
+    }
+
     return 0;
 }
