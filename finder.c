@@ -4,6 +4,7 @@
 
 #include "finder.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 int* pathFinder(t_node Tree){
     int* chemin = (int*) malloc(6*sizeof(int));
