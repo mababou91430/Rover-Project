@@ -301,3 +301,14 @@ void displayMap(t_map map)
     }
     return;
 }
+
+//Check si MARC est au coord de la base
+int isAtBaseStation(t_map map, t_localisation loc) {
+    t_position base = getBaseStationPosition(map);
+    return (loc.pos.x == base.x && loc.pos.y == base.y);
+}
+
+//Check si MARC est sur une case crevasse
+int IsOnCrevasse(t_map map,t_localisation loc){
+    return (map.soils[loc.pos.y][loc.pos.x] == CREVASSE);
+}
