@@ -15,6 +15,18 @@ void printTree(t_node * Tree) {
 
                     for (int m = 0; m < 5; m++) {
 
+
+
+
+
+
+
+
+
+
+
+
+
                     }
                 }
             }
