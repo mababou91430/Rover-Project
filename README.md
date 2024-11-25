@@ -1,4 +1,4 @@
-Rover Run Project
+#Rover Run Project
 Description
 Ce projet, réalisé dans le cadre du cours TI301 - Algorithmique et Structures de Données, vise à concevoir un logiciel pour guider le rover MARC (Mars Rover Cartograph) sur Mars. Le rover doit naviguer sur une carte martienne, éviter les obstacles, minimiser les coûts de déplacement, et atteindre une station de base.
 
