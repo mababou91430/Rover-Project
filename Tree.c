@@ -58,13 +58,12 @@ t_node createTree_nr(t_map map, t_localisation loc_init){
                         }
                         Tree->sons[i]->sons[j]->sons[k]->sons[l]->sons[m]->value = map.costs[temp4.pos.x][temp4.pos.y];
                         Tree->sons[i]->sons[j]->sons[k]->sons[l]->sons[m]->sons = NULL;
-                   }
+                    }
                 }
-             }
-         }
+            }
+        }
     }
     return *Tree;
 }
-
 
 

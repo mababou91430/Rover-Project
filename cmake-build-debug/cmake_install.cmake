@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mathm/CLionProjects/Projet Rover/Rover-Project
+# Install script for directory: C:/Users/trist/Desktop/Project C ROVER/Rover-Project-main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/mathm/CLionProjects/Projet Rover/Rover-Project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/trist/Desktop/Project C ROVER/Rover-Project-main/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
