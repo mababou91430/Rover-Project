@@ -10,3 +10,13 @@
 262	432	7540745318132116	CMakeFiles/untitled1.dir/randMove.c.obj	f8fdd47198004bdb
 218	393	7540745317742066	CMakeFiles/untitled1.dir/printArbre.c.obj	428debf9c31a910c
 2	115	7540821021502140	CMakeFiles/untitled1.dir/finder.c.obj	e116201a2ba1535c
+33	203	7541679096336273	CMakeFiles/untitled1.dir/loc.c.obj	32367800f22eaf6d
+2	221	7541679096296271	CMakeFiles/untitled1.dir/main.c.obj	12efa5e1ad6631a0
+22	237	7541679096556274	CMakeFiles/untitled1.dir/moves.c.obj	79254a7867851e8f
+62	261	7541679096806637	CMakeFiles/untitled1.dir/queue.c.obj	6b93072483798d5f
+49	265	7541679096826282	CMakeFiles/untitled1.dir/Tree.c.obj	eecbcf27d2886775
+83	287	7541679097193428	CMakeFiles/untitled1.dir/map.c.obj	b4ee04d67a948f20
+204	353	7541679097851362	CMakeFiles/untitled1.dir/finder.c.obj	e116201a2ba1535c
+222	365	7541679097981341	CMakeFiles/untitled1.dir/randMove.c.obj	f8fdd47198004bdb
+237	377	7541679098111414	CMakeFiles/untitled1.dir/printArbre.c.obj	428debf9c31a910c
+378	551	7541679099783252	untitled1.exe	ff70585540a6cc9b
